@@ -1,0 +1,46 @@
+.modal {
+  &__checkbox-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: $sec-text-color;
+  }
+
+  &__link {
+    margin-left: 6px;
+    text-decoration-line: underline;
+    color: $accent-color;
+  }
+
+  /* Кастомизация чекбокса */
+  &__checkbox {
+    appearance: none;
+  }
+
+  &__checker {
+    display: inline-block;
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 4px;
+
+    @include transition ();
+  }
+
+  &__checkbox:checked + &__checker {
+    border-color: transparent;
+    background-color: $accent-color;
+    background-image: url("../images/svg/icon-modal-checker.svg");
+    background-size: contain;
+    background-origin: border-box;
+  }
+}

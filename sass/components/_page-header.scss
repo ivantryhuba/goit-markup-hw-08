@@ -1,0 +1,10 @@
+// Хедер
+.page-header {
+  border-bottom: #e5e5e5 1px solid;
+  background: $pri-background-color;
+
+  &__flex {
+    display: flex;
+    align-items: center;
+  }
+}

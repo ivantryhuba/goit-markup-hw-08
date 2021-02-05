@@ -1,0 +1,85 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+
+  background-color: $pri-background-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  @include transition (transform);
+
+  &__title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $pri-text-color;
+  }
+
+  &__field {
+    margin-bottom: 10px;
+  }
+
+  &__field-label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: $sec-text-color;
+
+    cursor: pointer;
+  }
+
+  &__input-block {
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    @include transition (border-color);
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+
+    @include transition (fill);
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
+  }
+}
+
+.modal__input-block:focus-within {
+  .modal__input {
+    border-color: $accent-color;
+    outline: none;
+  }
+
+  .modal__icon {
+    fill: $accent-color;
+  }
+}

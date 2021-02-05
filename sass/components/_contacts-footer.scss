@@ -1,0 +1,36 @@
+// Реквизиты 
+.page-footer__requisites {
+  width: 231px;
+  margin-right: 70px;
+
+  //  Адрес
+  .page-footer__address {
+    margin-top: 20px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: #ffffff;
+  }
+}
+
+// Контакты футер
+.contacts-footer {
+  margin-top: 9px;
+
+  &__item:not(:first-child) {
+    margin-top: 9px;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

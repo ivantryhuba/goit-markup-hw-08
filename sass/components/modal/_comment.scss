@@ -1,0 +1,36 @@
+.modal {
+
+  &__comment-field{
+    margin-bottom: 20px;
+  }
+
+  &__comment {
+    width: 100%;
+    height: 120px;
+
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-left: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    @include transition (border-color);
+
+    resize: none;
+  }
+
+  &__comment::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &__comment:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
+}
+  

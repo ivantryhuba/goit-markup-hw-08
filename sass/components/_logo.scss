@@ -1,0 +1,21 @@
+// Лого
+.logo {
+  font-family: $sec-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  color: #2196f3;
+
+  // Лого-хедер
+  &--header {
+    color: #000000;
+  }
+  // Лого-футер
+  &--footer {
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,9 @@
+.page-footer {
+  background-color: $footer-background-color;
+
+
+  &__flex {
+    display: flex;
+    align-items: center;
+  }
+}
