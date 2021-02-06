@@ -1,13 +1,18 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background: $pri-background-color;
 
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &__item {
@@ -15,12 +20,18 @@
     justify-content: center;
     align-items: center;
 
-    width: 170px;
+    width: calc((100% - 30px) / 2);
     height: 90px;
-  }
+    margin-top: 30px;
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: $tablet-width) and (max-width: 1199px) {
+      width: calc((100% - 60px) / 3);
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: calc((100% - 150px) / 6);
+      margin-top: 50px;
+    }
   }
 
   &__link {
@@ -36,7 +47,7 @@
     border: 1px solid $pri-icon-color;
     border-radius: 4px;
 
-    @include transition (color);
+    @include transition(color);
   }
 
   &__icon {
