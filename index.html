@@ -18,7 +18,19 @@
             Web<span class="logo logo--header">Studio</span>
           </a>
 
-          <div class="menu">
+          <!-- Кнопка меню -->
+          <button type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-menu-button>
+            <svg class="menu-icon icon" width="25" height="19" aria-label="Переключатель мобильного меню">
+              <use class="icon-close" href="./images/svg/sprite.svg#icon-modal-close"></use>
+              <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu-burger"></use>
+            </svg>
+          </button>
+
+          <div class="menu" id="menu" data-menu>
             <!-- Главная навигация -->
             <nav class="nav">
               <!-- Переход на другие страницы -->
@@ -45,7 +57,7 @@
             <ul class="contacts-header list">
               <li class="contacts-header__item item">
                 <a
-                  class="contacts-header__link link"
+                  class="contacts-header__link contacts-header__link--mail link"
                   href="mailto:info@devstudio.com"
                 >
                   <svg
@@ -59,7 +71,7 @@
                 </a>
               </li>
               <li class="contacts-header__item item">
-                <a class="contacts-header__link link" href="tel:+380961111111">
+                <a class="contacts-header__link contacts-header__link--tel link" href="tel:+380961111111">
                   <svg
                     class="contacts-header__icon icon"
                     width="10"
@@ -71,14 +83,23 @@
                 </a>
               </li>
             </ul>
-          </div>
 
-          <button class="menu-button">
-            <svg class="menu-icon icon" width="25" height="19">
-              <use href="./images/svg/sprite.svg#icon-modal-close"></use>
-              <use href="./images/svg/sprite.svg#icon-menu-burger"></use>
-            </svg>
-          </button>
+            <!-- Социальные сети -->
+            <ul class="social-header">
+              <li class="social-header__item item">
+                <a class="social-header__link link" href="#">Instagram</a>
+              </li>
+              <li class="social-header__item item">
+                <a class="social-header__link link" href="#">Twitter</a>
+              </li>
+              <li class="social-header__item item">
+                <a class="social-header__link link" href="#">Facebook</a>
+              </li>
+              <li class="social-header__item item">
+                <a class="social-header__link link" href="#">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -589,7 +610,8 @@
       </div>
     </div>
 
-    <!-- Скрипт открытия-закрытия модального окна -->
+    <!-- Скрипты открытия-закрытия модального окна и меню -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
