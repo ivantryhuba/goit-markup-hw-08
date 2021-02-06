@@ -13,46 +13,72 @@
     <header class="page-header">
       <div class="container">
         <div class="page-header__flex">
-          <!-- Главная навигация -->
-          <nav class="nav">
-            <!-- Лого-хедер -->
-            <a class="logo link" href="./index.html" lang="en">
-              Web<span class="logo logo--header">Studio</span>
-            </a>
+          <!-- Лого-хедер -->
+          <a class="logo link" href="./index.html" lang="en">
+            Web<span class="logo logo--header">Studio</span>
+          </a>
 
-            <!-- Переход на другие страницы -->
-            <ul class="nav__list list">
-              <li class="nav__item item">
-                <a class="nav__link nav__link--current link" href="./index.html">Студия</a>
+          <div class="menu">
+            <!-- Главная навигация -->
+            <nav class="nav">
+              <!-- Переход на другие страницы -->
+              <ul class="nav__list list">
+                <li class="nav__item item">
+                  <a
+                    class="nav__link nav__link--current link"
+                    href="./index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="nav__item item">
+                  <a class="nav__link link" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="nav__item item">
+                  <a class="nav__link link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Контакты хедер -->
+            <ul class="contacts-header list">
+              <li class="contacts-header__item item">
+                <a
+                  class="contacts-header__link link"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg
+                    class="contacts-header__icon icon"
+                    width="16"
+                    height="12"
+                  >
+                    <use href="./images/svg/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
               </li>
-              <li class="nav__item item">
-                <a class="nav__link link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="nav__item item">
-                <a class="nav__link link" href="#">Контакты</a>
+              <li class="contacts-header__item item">
+                <a class="contacts-header__link link" href="tel:+380961111111">
+                  <svg
+                    class="contacts-header__icon icon"
+                    width="10"
+                    height="16"
+                  >
+                    <use href="./images/svg/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
               </li>
             </ul>
-          </nav>
+          </div>
 
-          <!-- Контакты хедер -->
-          <ul class="contacts-header list">
-            <li class="contacts-header__item item">
-              <a class="contacts-header__link link" href="mailto:info@devstudio.com">
-                <svg class="contacts-header__icon icon" width="16" height="12">
-                  <use href="./images/svg/sprite.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts-header__item item">
-              <a class="contacts-header__link link" href="tel:+380961111111">
-                <svg class="contacts-header__icon icon" width="10" height="16">
-                  <use href="./images/svg/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+          <button class="menu-button">
+            <svg class="menu-icon icon" width="25" height="19">
+              <use href="./images/svg/sprite.svg#icon-modal-close"></use>
+              <use href="./images/svg/sprite.svg#icon-menu-burger"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -77,7 +103,9 @@
       <section class="features">
         <div class="container">
           <!-- Скрытый заголовок -->
-          <h2 class="section__title section__title--hidden title">Особенности</h2>
+          <h2 class="section__title section__title--hidden title">
+            Особенности
+          </h2>
 
           <ul class="features__list list">
             <li class="features__item item">
@@ -387,17 +415,24 @@
             </a>
 
             <!-- Адрес -->
-            <address class="page-footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+            <address class="page-footer__address">
+              г. Киев, пр-т Леси Украинки, 26
+            </address>
 
             <!-- Контакты футер -->
             <ul class="contacts-footer list">
               <li class="contacts-footer__item item">
-                <a class="contacts-footer__link link" href="mailto:info@example.com">
+                <a
+                  class="contacts-footer__link link"
+                  href="mailto:info@example.com"
+                >
                   info@example.com
                 </a>
               </li>
               <li class="contacts-footer__item item">
-                <a class="contacts-footer__link link" href="tel:+380991111111"> +38 099 111 11 11 </a>
+                <a class="contacts-footer__link link" href="tel:+380991111111">
+                  +38 099 111 11 11
+                </a>
               </li>
             </ul>
           </div>
@@ -481,7 +516,12 @@
           <div class="modal__field">
             <label class="modal__field-label" for="telephone">Телефон</label>
             <div class="modal__input-block">
-              <input class="modal__input" type="tel" name="telephone" id="telephone" />
+              <input
+                class="modal__input"
+                type="tel"
+                name="telephone"
+                id="telephone"
+              />
               <svg class="modal__icon icon" width="13" height="13">
                 <use href="./images/svg/sprite.svg#icon-modal-tel"></use>
               </svg>
@@ -492,7 +532,12 @@
           <div class="modal__field">
             <label class="modal__field-label" for="email">Почта</label>
             <div class="modal__input-block">
-              <input class="modal__input" type="email" name="email" id="email" />
+              <input
+                class="modal__input"
+                type="email"
+                name="email"
+                id="email"
+              />
               <svg class="modal__icon icon" width="15" height="12">
                 <use href="./images/svg/sprite.svg#icon-modal-mail"></use>
               </svg>
@@ -526,11 +571,17 @@
           </label>
 
           <!-- Кнопка отправки формы -->
-          <button class="modal__button modal__button--submit" type="submit">Отправить</button>
+          <button class="modal__button modal__button--submit" type="submit">
+            Отправить
+          </button>
         </form>
 
         <!-- Кнопка закрытия -->
-        <button class="modal__button modal__button--close" type="button" data-modal-close>
+        <button
+          class="modal__button modal__button--close"
+          type="button"
+          data-modal-close
+        >
           <svg class="modal__close-icon icon" width="11" height="11">
             <use href="./images/svg/sprite.svg#icon-modal-close"></use>
           </svg>
