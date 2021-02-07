@@ -26,7 +26,6 @@
 
     width: calc((100% - 30px) / 2);
     height: 90px;
-    margin-top: 30px;
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
       width: calc((100% - 60px) / 3);
@@ -34,7 +33,7 @@
 
     @media screen and (min-width: $desktop) {
       width: calc((100% - 150px) / 6);
-      margin-top: 50px;
+    
     }
 
     @media screen and (max-width: 1199px) {
