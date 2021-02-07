@@ -8,14 +8,14 @@
     padding-top: 118px;
     padding-bottom: 118px;
 
-    @media screen and (min-width: $desktop-width) {
+    @media screen and (min-width: $desktop) {
       padding-top: 200px;
       padding-bottom: 200px;
     }
   }
 
   &__title {
-    width: 360px;
+    max-width: 360px;
 
     margin-bottom: 30px;
     margin-left: auto;
@@ -30,8 +30,8 @@
 
     color: #ffffff;
 
-    @media screen and (min-width: $desktop-width) {
-      width: 696px;
+    @media screen and (min-width: $desktop) {
+      max-width: 696px;
       font-size: 44px;
       line-height: 1.36;
     }
@@ -90,7 +90,7 @@
       url(../images/mobile/studio/hero@2x.jpg);
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet) {
     max-width: 768px;
     background-image: linear-gradient(
         to right,
@@ -111,7 +111,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop) {
     max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(

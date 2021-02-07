@@ -4,7 +4,7 @@
 
   background: $pri-background-color;
 
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -13,6 +13,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media screen and (max-width: 1199px) {
+      margin-top: -30px;
+    }
   }
 
   &__item {
@@ -24,13 +28,17 @@
     height: 90px;
     margin-top: 30px;
 
-    @media screen and (min-width: $tablet-width) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       width: calc((100% - 60px) / 3);
     }
 
-    @media screen and (min-width: $desktop-width) {
+    @media screen and (min-width: $desktop) {
       width: calc((100% - 150px) / 6);
       margin-top: 50px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      margin-top: 30px;
     }
   }
 

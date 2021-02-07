@@ -2,12 +2,12 @@
   padding-top: 60px;
   background: $pri-background-color;
 
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop) {
     padding-top: 94px;
   }
 
   &__list {
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -21,11 +21,11 @@
   &__item {
     margin-bottom: 30px;
 
-    @media screen and (min-width: $tablet-width) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       width: calc((100% - 30px) / 2);
     }
 
-    @media screen and (min-width: $desktop-width) {
+    @media screen and (min-width: $desktop) {
       width: calc((100% - 90px) / 4);
       margin-bottom: 0;
     }
@@ -56,7 +56,7 @@
 
     color: $pri-text-color;
 
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: $tablet) {
       text-align: left;
     }
   }
@@ -69,7 +69,7 @@
     text-align: center;
     color: $sec-text-color;
 
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: $tablet) {
       text-align: left;
     }
   }

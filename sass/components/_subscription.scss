@@ -1,15 +1,9 @@
 .subscription {
-  width: 450px;
+  width: 570px;
+
   margin-left: auto;
-
-  @media screen and (max-width: 1199px) {
-    margin-top: 60px;
-    margin-right: auto;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    width: 570px;
-  }
+  padding-top: 72px;
+  padding-bottom: 94px;
 
   &__text {
     margin-bottom: 20px;
@@ -21,24 +15,17 @@
 
     color: #ffffff;
 
-    @include transition(border);
+    @include transition (border);
   }
 
   &__form {
-    @media screen and (max-width: 1199px) {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    @media screen and (min-width: $desktop-width) {
-      display: flex;
-      align-items: center;
-    }
+    display: flex;
+    align-items: center;
   }
 
   &__input {
-    width: 450px;
-
+    width: 358px;
+    margin-right: 12px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
@@ -49,28 +36,16 @@
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
-    background-color: $footer-background-color;
+    background-color:$footer-background-color;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-
-    @media screen and (max-width: 1199px) {
-      margin-bottom: 20px;
-    }
-
-    @media screen and (min-width: $desktop-width) {
-      width: 358px;
-      margin-right: 12px;
-    }
   }
 
   &__button {
     display: flex;
     align-items: center;
-
-    margin-left: auto;
-    margin-right: auto;
 
     padding: 10px 29px;
 
