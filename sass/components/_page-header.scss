@@ -82,12 +82,12 @@
 
 // Контакты
 .contacts-header {
-  display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin-left: auto;
-  
+
   @media screen and (min-width: $desktop) {
+    display: flex;
     flex-wrap: nowrap;
   }
 
