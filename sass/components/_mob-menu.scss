@@ -1,0 +1,64 @@
+.mob-nav {
+  margin-bottom: 300px;
+}
+
+.mob-nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mob-nav__item:not(:last-child),
+.mob-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-nav__link {
+  font-size: 40px;
+  color: $pri-text-color;
+}
+
+.mob-nav__link--current {
+  color: $accent-color;
+}
+
+.mob-contacts {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 64px;
+
+  .tel {
+    font-size: 34px;
+    color: $accent-color;
+  }
+
+  .mail {
+    font-size: 24px;
+    color: $sec-text-color;
+  }
+}
+
+.mob-social {
+  display: flex; 
+
+  &__link {
+    font-size: 18px;
+    color: $accent-color;
+  }
+}
+.mob-social__item:not(:last-child){
+  position: relative;
+  margin-right: 21px;
+
+   &::after {
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+
+    content: "";
+    width: 1px;
+    height: 100%;
+
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+}

@@ -620,13 +620,83 @@ img {
   color: #2196f3;
 }
 
+.menu {
+  display: none;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 48px 40px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.menu.is-open {
+  display: block;
+}
+
+.menu-button {
+  padding: 11px;
+  background-color: transparent;
+  border: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+}
+
+.menu-button:hover, .menu-button:focus {
+  color: #2196f3;
+}
+
+.menu-button .menu-icon {
+  fill: currentColor;
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button .icon-menu {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 .logo {
-  padding: 26px 0;
+  padding: 16px 0;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding: 26px 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -642,6 +712,69 @@ img {
 
 .logo--footer {
   color: #ffffff;
+}
+
+.mob-nav {
+  margin-bottom: 300px;
+}
+
+.mob-nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mob-nav__item:not(:last-child),
+.mob-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-nav__link {
+  font-size: 40px;
+  color: #212121;
+}
+
+.mob-nav__link--current {
+  color: #2196f3;
+}
+
+.mob-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+.mob-contacts .tel {
+  font-size: 34px;
+  color: #2196f3;
+}
+
+.mob-contacts .mail {
+  font-size: 24px;
+  color: #757575;
+}
+
+.mob-social {
+  display: flex;
+}
+
+.mob-social__link {
+  font-size: 18px;
+  color: #2196f3;
+}
+
+.mob-social__item:not(:last-child) {
+  position: relative;
+  margin-right: 21px;
+}
+
+.mob-social__item:not(:last-child)::after {
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 0.2);
 }
 
 .section-title {
