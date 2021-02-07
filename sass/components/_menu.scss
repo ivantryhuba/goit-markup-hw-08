@@ -1,6 +1,14 @@
 .menu {
+  display: flex;
+
   font-weight: 500;
+  margin-left: 88px;
+
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 93px;
+  }
   
+
   @media screen and (max-width: 767px) {
     display: none;
 
@@ -15,17 +23,16 @@
     letter-spacing: 0.02em;
     
     background-color: $pri-background-color;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);    
   }
 
   &.is-open {
     display: block;
-    
   }
 }
 
 .menu-button {
+  margin-left: auto;
   padding: 11px;
   background-color: transparent;
   border: none;
@@ -60,6 +67,7 @@
   .icon-close {
     display: block;
   }
+
   .icon-menu {
     display: none;
   }

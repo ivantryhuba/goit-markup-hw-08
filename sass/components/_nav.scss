@@ -3,17 +3,18 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 302px;
   }
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .nav__list {
   @media screen and (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    margin-left: 88px;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    margin-left: 93px;
   }
 }
 
