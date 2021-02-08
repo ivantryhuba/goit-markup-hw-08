@@ -190,6 +190,7 @@
   &:hover,
   &:focus {
     color: $accent-color;
+    outline: none;
   }
 
   .menu-icon {
