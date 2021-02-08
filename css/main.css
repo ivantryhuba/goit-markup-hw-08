@@ -640,8 +640,10 @@ img {
   }
 }
 
-.menu.is-open {
-  display: block;
+@media screen and (max-width: 767px) {
+  .menu.is-open {
+    display: block;
+  }
 }
 
 .menu-button {
