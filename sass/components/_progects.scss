@@ -34,7 +34,7 @@
   &__link {
     display: block;
 
-    @include transition (box-shadow);
+    @include transition(box-shadow);
   }
 
   &__link:hover,
@@ -97,7 +97,13 @@
   }
 }
 
-.progects__link:hover ,
+.thumb__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.progects__link:hover,
 .progects__link:focus {
   .progects__overlay {
     transform: translateY(0);

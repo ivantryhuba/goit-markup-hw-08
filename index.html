@@ -92,68 +92,67 @@
               ></use>
             </svg>
           </button>
+        </div>
+        <div class="menu" id="menu" data-menu>
+          <div class="menu-container">
+            <!-- Главная навигация -->
+            <nav class="mob-nav">
+              <!-- Переход на другие страницы -->
+              <ul class="mob-nav__list list">
+                <li class="mob-nav__item item">
+                  <a
+                    class="mob-nav__link mob-nav__link--current link"
+                    href="./index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mob-nav__item item">
+                  <a class="mob-nav__link link" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mob-nav__item item">
+                  <a class="mob-nav__link link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
 
-          <div class="menu" id="menu" data-menu>
-            <div class="menu-container">
-              <!-- Главная навигация -->
-              <nav class="mob-nav">
-                <!-- Переход на другие страницы -->
-                <ul class="mob-nav__list list">
-                  <li class="mob-nav__item item">
-                    <a
-                      class="mob-nav__link mob-nav__link--current link"
-                      href="./index.html"
-                      >Студия</a
-                    >
-                  </li>
-                  <li class="mob-nav__item item">
-                    <a class="mob-nav__link link" href="./portfolio.html"
-                      >Портфолио</a
-                    >
-                  </li>
-                  <li class="mob-nav__item item">
-                    <a class="mob-nav__link link" href="#">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
-              
-              <div>
-                <!-- Контакты -->
-                <ul class="mob-contacts list">
-                  <li class="mob-contacts__item item">
-                    <a
-                      class="mob-contacts__link tel link"
-                      href="tel:+380961111111"
-                    >
-                      +38 096 111 11 11
-                    </a>
-                  </li>
-                  <li class="mob-contacts__item item">
-                    <a
-                      class="mob-contacts__link mail link"
-                      href="mailto:info@devstudio.com"
-                    >
-                      info@devstudio.com
-                    </a>
-                  </li>
-                </ul>
+            <div>
+              <!-- Контакты -->
+              <ul class="mob-contacts list">
+                <li class="mob-contacts__item item">
+                  <a
+                    class="mob-contacts__link tel link"
+                    href="tel:+380961111111"
+                  >
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="mob-contacts__item item">
+                  <a
+                    class="mob-contacts__link mail link"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
 
-                <!-- Социальные сети -->
-                <ul class="mob-social list">
-                  <li class="mob-social__item item">
-                    <a class="mob-social__link link" href="#">Instagram</a>
-                  </li>
-                  <li class="mob-social__item item">
-                    <a class="mob-social__link link" href="#">Twitter</a>
-                  </li>
-                  <li class="mob-social__item item">
-                    <a class="mob-social__link link" href="#">Facebook</a>
-                  </li>
-                  <li class="mob-social__item item">
-                    <a class="mob-social__link link" href="#">LinkedIn</a>
-                  </li>
-                </ul>
-              </div>
+              <!-- Социальные сети -->
+              <ul class="mob-social list">
+                <li class="mob-social__item item">
+                  <a class="mob-social__link link" href="#">Instagram</a>
+                </li>
+                <li class="mob-social__item item">
+                  <a class="mob-social__link link" href="#">Twitter</a>
+                </li>
+                <li class="mob-social__item item">
+                  <a class="mob-social__link link" href="#">Facebook</a>
+                </li>
+                <li class="mob-social__item item">
+                  <a class="mob-social__link link" href="#">LinkedIn</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -183,7 +182,7 @@
           <h2 class="section__title section__title--hidden title">
             Особенности
           </h2>
-
+          <!-- Особенности -->
           <ul class="features__list list">
             <li class="features__item item">
               <div class="features__thumb">
@@ -244,7 +243,24 @@
           <ul class="we-do__list list">
             <li class="we-do__item item">
               <div class="we-do__card">
-                <img src="./images/studio/box1.jpg" alt="Десктопные решения" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/studio/box1.webp    1x,
+                      ./images/desktop/studio/box1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class=""
+                    srcset="
+                      ./images/desktop/studio/box1.jpg    1x,
+                      ./images/desktop/studio/box1@2x.jpg 2x
+                    "
+                    src="./images/desktop/studio/box1.jpg"
+                    alt="Десктопные приложения"
+                  />
+                </picture>
                 <div class="we-do__card-label">
                   <h3 class="we-do__card-title title">Десктопные приложения</h3>
                 </div>
@@ -252,10 +268,24 @@
             </li>
             <li class="we-do__item item">
               <div class="we-do__card">
-                <img
-                  src="./images/studio/box2.jpg"
-                  alt="Мобильные приложения"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/studio/box2.webp    1x,
+                      ./images/desktop/studio/box2@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class=""
+                    srcset="
+                      ./images/desktop/studio/box2.jpg    1x,
+                      ./images/desktop/studio/box2@2x.jpg 2x
+                    "
+                    src="./images/desktop/studio/box2.jpg"
+                    alt="Мобильные приложения"
+                  />
+                </picture>
                 <div class="we-do__card-label">
                   <h3 class="we-do__card-title title">Мобильные приложения</h3>
                 </div>
@@ -263,10 +293,24 @@
             </li>
             <li class="we-do__item item">
               <div class="we-do__card">
-                <img
-                  src="./images/studio/box3.jpg"
-                  alt="Дизайнерские решения"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/studio/box3.webp    1x,
+                      ./images/desktop/studio/box3@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class=""
+                    srcset="
+                      ./images/desktop/studio/box3.jpg    1x,
+                      ./images/desktop/studio/box3@2x.jpg 2x
+                    "
+                    src="./images/desktop/studio/box3.jpg"
+                    alt="Дизайнерские решения"
+                  />
+                </picture>
                 <div class="we-do__card-label">
                   <h3 class="we-do__card-title title">Дизайнерские решения</h3>
                 </div>
@@ -282,10 +326,45 @@
           <h2 class="section-title title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item item">
-              <img
-                src="./images/studio/demianenko.jpg"
-                alt="Игорь Демьяненко"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/studio/demianenko.webp    1x,
+                    ./images/mobile/studio/demianenko@2x.webp 2x,
+                    ./images/mobile/studio/demianenko.jpg     1x,
+                    ./images/mobile/studio/demianenko@2x.jpg  2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/studio/demianenko.webp    1x,
+                    ./images/tablet/studio/demianenko@2x.webp 2x,
+                    ./images/tablet/studio/demianenko.jpg     1x,
+                    ./images/tablet/studio/demianenko@2x.jpg  2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/studio/demianenko.webp    1x,
+                    ./images/desktop/studio/demianenko@2x.webp 2x,
+                    ./images/desktop/studio/demianenko.jpg     1x,
+                    ./images/desktop/studio/demianenko@2x.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  class="team-card__photo"
+                  src="./images/tablet/studio/demianenko.jpg"
+                  alt="Игорь Демьяненко"
+                  width="354px"
+                  height="374px"
+                />
+              </picture>
               <h3 class="team__name title">Игорь Демьяненко</h3>
               <p class="team__profession text" lang="en">Product Designer</p>
               <ul class="social list">
@@ -320,7 +399,45 @@
               </ul>
             </li>
             <li class="team__item item">
-              <img src="./images/studio/repina.jpg" alt="Ольга Репина" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/studio/repina.webp    1x,
+                    ./images/mobile/studio/repina@2x.webp 2x,
+                    ./images/mobile/studio/repina.jpg     1x,
+                    ./images/mobile/studio/repina@2x.jpg  2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/studio/repina.webp    1x,
+                    ./images/tablet/studio/repina@2x.webp 2x,
+                    ./images/tablet/studio/repina.jpg     1x,
+                    ./images/tablet/studio/repina@2x.jpg  2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/studio/repina.webp    1x,
+                    ./images/desktop/studio/repina@2x.webp 2x,
+                    ./images/desktop/studio/repina.jpg     1x,
+                    ./images/desktop/studio/repina@2x.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  class="team-card__photo"
+                  src="./images/tablet/studio/repina.jpg"
+                  alt="Ольга Репина"
+                  width="354px"
+                  height="374px"
+                />
+              </picture>
               <h3 class="team__name title">Ольга Репина</h3>
               <p class="team__profession text" lang="en">Frontend Developer</p>
               <ul class="social list">
@@ -355,7 +472,45 @@
               </ul>
             </li>
             <li class="team__item item">
-              <img src="./images/studio/tarasov.jpg" alt="Николай Тарасов" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/studio/tarasov.webp    1x,
+                    ./images/mobile/studio/tarasov@2x.webp 2x,
+                    ./images/mobile/studio/tarasov.jpg     1x,
+                    ./images/mobile/studio/tarasov@2x.jpg  2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/studio/tarasov.webp    1x,
+                    ./images/tablet/studio/tarasov@2x.webp 2x,
+                    ./images/tablet/studio/tarasov.jpg     1x,
+                    ./images/tablet/studio/tarasov@2x.jpg  2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/studio/tarasov.webp    1x,
+                    ./images/desktop/studio/tarasov@2x.webp 2x,
+                    ./images/desktop/studio/tarasov.jpg     1x,
+                    ./images/desktop/studio/tarasov@2x.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  class="team-card__photo"
+                  src="./images/tablet/studio/tarasov.jpg"
+                  alt="Николай Тарасов"
+                  width="354px"
+                  height="374px"
+                />
+              </picture>
               <h3 class="team__name title">Николай Тарасов</h3>
               <p class="team__profession text" lang="en">Marketing</p>
               <ul class="social list">
@@ -390,7 +545,45 @@
               </ul>
             </li>
             <li class="team__item item">
-              <img src="./images/studio/yermakov.jpg" alt="Михаил Ермаков" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/studio/yermakov.webp    1x,
+                    ./images/mobile/studio/yermakov@2x.webp 2x,
+                    ./images/mobile/studio/yermakov.jpg     1x,
+                    ./images/mobile/studio/yermakov@2x.jpg  2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/studio/yermakov.webp    1x,
+                    ./images/tablet/studio/yermakov@2x.webp 2x,
+                    ./images/tablet/studio/yermakov.jpg     1x,
+                    ./images/tablet/studio/yermakov@2x.jpg  2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/studio/yermakov.webp    1x,
+                    ./images/desktop/studio/yermakov@2x.webp 2x,
+                    ./images/desktop/studio/yermakov.jpg     1x,
+                    ./images/desktop/studio/yermakov@2x.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  class="team-card__photo"
+                  src="./images/tablet/studio/yermakov.jpg"
+                  alt="Михаил Ермаков"
+                  width="354px"
+                  height="374px"
+                />
+              </picture>
               <h3 class="team__name title">Михаил Ермаков</h3>
               <p class="team__profession text" lang="en">UI Designer</p>
               <ul class="social list">
