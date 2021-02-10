@@ -15,10 +15,12 @@
   }
 
   &__item {
+    flex-basis: 100%;
+
     margin-right: 30px;
     margin-bottom: 30px;
-
-    flex-basis: 100%;
+    
+    align-items: center;
 
     @media screen and (min-width: $tablet) {
       flex-basis: calc(100% / 2 - 30px);
